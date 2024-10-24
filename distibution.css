@@ -1,0 +1,240 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+:root{
+    --bg-color: #fff;
+    --text-color:#fff;
+    --second-color:#5a7184;
+    --main-color:#009CB3;
+    --big-font:6rem;
+    --h2-font:2rem;
+    --p-font:1.1rem;
+}
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+header {
+    position: fixed; /* Menjaga navbar tetap di atas */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff; /* Mengubah warna latar belakang menjadi putih */
+    padding: 10px 5%; /* Padding untuk memberi ruang di dalam navbar */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan di bawah navbar */
+    transition: background 0.4s; /* Transisi saat mengubah warna latar belakang */
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--main-color); /* Mengubah warna logo */
+    margin-right: auto; /* Ini memastikan logo tetap di sebelah kiri */
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Memusatkan teks navbar secara horizontal */
+    flex-grow: 1;
+}
+
+.navbar li {
+    margin: 0 10px; /* Memberikan jarak antar item navbar */
+}
+
+.navbar a {
+    color: var(--second-color); /* Mengubah warna teks navbar */
+    font-size: var(--p-font);
+    font-weight: 500;
+    text-align: center; /* Memastikan teks berada di tengah */
+    padding: 10px 30px;
+    border-radius: 4px;
+    transition: color 0.4s; /* Transisi saat mengubah warna */
+}
+
+.navbar a:hover {
+    color: var(--main-color); /* Mengubah warna teks menjadi warna utama saat di-hover */
+}
+
+
+.search-icon {
+    font-size: 25px;
+    color: var(--main-color); /* Mengubah warna ikon pencarian */
+    cursor: pointer;
+}
+
+
+/* Section Distribusi */
+
+.distribution-section {
+    padding: 100px 20px;
+    text-align: center;
+    background-color: transparent;
+}
+
+.distribution-section .title {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+.distribution-section .description {
+    font-size: 18px;
+    font-weight: 400;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+}
+/*distibution-info*/
+.distribution-info {
+    padding: 50px 0;
+    background-color: transparent;
+}
+
+.distribution-info .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.info-content {
+    flex: 1 1 30%;
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.info-content:hover {
+    transform: translateY(-5px);
+}
+
+.info-text h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.info-text p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .info-content {
+        flex: 1 1 100%;
+        margin: 10px 0;
+    }
+}
+
+/* Styling footer container */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    margin: 10px 0;
+}
+
+/* Logo Styling */
+.logo-footer {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 10px 0;
+}
+
+.footer p {
+    margin: 5px 0; /* Jarak atas dan bawah untuk paragraf */
+    font-size: 14px; /* Ukuran font untuk paragraf */
+    color: white; /* Warna teks paragraf */
+}
+
+/* Social media section */
+.icons {
+    display: flex; /* Menampilkan ikon secara horizontal */
+    justify-content: start; /* Menempatkan ikon di tengah secara horizontal */
+    align-items: center; /* Menyelaraskan ikon di tengah secara vertikal */
+    gap: 15px; /* Jarak antar ikon */
+    margin-top: 10px; /* Jarak atas dari konten sebelumnya */
+}
+
+.icons a {
+    color: white; /* Warna default ikon */
+    font-size: 24px; /* Ukuran ikon */
+    transition: color 0.3s; /* Efek transisi warna saat hover */
+}
+
+.footer-content {
+    flex: 1;
+    text-align: left; /* Menjaga konten layanan dan media tetap rata kiri */
+    margin-left: 40px; /* Memindahkan bagian ini sedikit ke kiri atau tengah */
+}
+
+/* Footer content (Layanan Kami & Media Informasi) */
+.footer-content h4 {
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.footer-content ul {
+    padding: 0;
+    margin: 0;
+}
+
+.footer-content li {
+    list-style: none;
+    margin: 5px 0;
+}
+
+.footer-content li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-content li a:hover,
+.footer-content .icons a:hover {
+    color: #00bcd4; /* Warna saat di-hover */
+}
+
+
